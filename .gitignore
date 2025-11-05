@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Conda
+.conda/
+
+# MFA models (downloaded automatically, don't need to track)
+# Models are downloaded to ~/Documents/MFA/ by default
+
+# Data files (too large for git)
+# Uncomment if you don't want to track audio/transcript files
+# data/audio/
+# data/transcripts/
+# wav/
+# transcripts/
+
+# Outputs (can be regenerated)
+# Uncomment if you don't want to track outputs
+# outputs/
+# *.TextGrid
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Temporary files
+*.tmp
+*.temp
+

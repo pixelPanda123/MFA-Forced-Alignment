@@ -1,0 +1,9 @@
+name: mfa_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - montreal-forced-aligner
+  - conda-forge::montreal-forced-aligner
+

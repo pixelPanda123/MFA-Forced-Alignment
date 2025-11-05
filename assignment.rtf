@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 Assignment 1: Forced Alignment using Montreal Forced Aligner (MFA)\
+Objective\
+Set up and execute a complete forced alignment pipeline using the Montreal Forced\
+Aligner (MFA) tool. And to understand how automatic alignment works between speech\
+audio and phonetic transcription.\
+What is Forced Alignment?\
+Forced alignment is the process of automatically matching an audio recording with its\
+corresponding text transcription at the word and phoneme level.\
+It determines when each word or sound begins and ends in the speech signal.\
+In simple terms, if you know what was said (the transcript), forced alignment helps you find\
+when it was said in the audio.\
+Suppose we have the following:\
+Audio:\
+A speaker says \'97 \'93Hello world\'94\
+Transcript:\
+HELLO WORLD\
+Pronunciation dictionary:\
+HELLO HH AH L OW\
+WORLD W ER L D\
+A forced aligner (like MFA) analyzes the audio and produces a TextGrid file, which marks\
+word and phoneme boundaries (start time, and end time), for example:\
+Words:\
+0.00 \'96 0.45 HELLO\
+0.45 \'96 0.90 WORLD\
+Phones:\
+0.00 \'96 0.10 HH0.10 \'96 0.25 AH\
+0.25 \'96 0.40 L\
+0.40 \'96 0.45 OW\
+0.45 \'96 0.55 W\
+0.55 \'96 0.70 ER\
+0.70 \'96 0.85 L\
+0.85 \'96 0.90 D\
+Dataset:\
+A pre-selected dataset containing audio files and corresponding text transcripts will be\
+provided. Each transcript corresponds to the spoken content in the audio file (typically one\
+utterance per file). You are required to use only the provided dataset for all experiments.\
+Task Overview:\
+You are required to:\
+1.
+\f1  
+\f0 Set up the MFA environment\
+2.
+\f1  
+\f0 Install Montreal Forced Aligner on your system\
+3.
+\f1  
+\f0 Prepare the data\
+a.
+\f1  
+\f0 Organize the dataset into the MFA-required format\
+4.
+\f1  
+\f0 Select or train a pronunciation dictionary\
+a.
+\f1  
+\f0 Use an existing MFA dictionary (e.g., english_us_arpa) or\
+b.
+\f1  
+\f0 Train your own dictionary from transcripts if required (using a G2P model).\
+5.
+\f1  
+\f0 Run forced alignment\
+6.
+\f1  
+\f0 Inspect and analyze the output\
+a.
+\f1  
+\f0 Check generated TextGrid files using Praat.\
+b.
+\f1  
+\f0 Identify how phoneme and word boundaries are aligned.\
+c.
+\f1  
+\f0 Observe any errors or mismatches in alignment (e.g., skipped phonemes,\
+timing offsets).\
+Submission Instructions:\
+\'b7 GitHub Repository: Push all scripts, setup instructions, and outputs to a public GitHub\
+repository.\
+\'b7 README: Include clear steps to install MFA, prepare the dataset, and run the alignment\
+(with example commands).\'b7 Outputs: TextGrid files.\
+\'b7 Report: Submit a short PDF report via email summarizing model/dictionary used, sample\
+alignment visualization, and key observations.\
+\'b7 Access: Ensure all links (GitHub and Drive) are publicly accessible for evaluation.\
+\'b7 Extra Credit: Awarded for training a custom dictionary, trying multiple acoustic models, or\
+automating the full pipeline.\
+Resources of data:\
+You can find the audio files in \'91wa}
