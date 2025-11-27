@@ -1,4 +1,4 @@
-# MFA Forced Alignment Assignment
+# MFA Forced Alignment 
 
 ## Setup Instructions
 
